@@ -1,0 +1,57 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+div {
+    margin-top: 100px;
+}
+
+table {
+    padding: 10px;
+    margin: auto;
+    background: #030000;
+    box-shadow: 10px 10px 12 1px rgba(#352b2b7e);
+    width: 200px;
+}
+
+table tr td {
+    padding: 10px;
+}
+
+.btn {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(252, 252, 252);
+    font-weight: 700;
+    font-size: 25px;
+    cursor: pointer;
+    margin: 4px;
+    border-radius: 50px;
+    border: 1px solid black;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    font-weight: 800;
+}
+
+input {
+    height: 35px;
+    width: 100%;
+    padding: 5px 0px 0px 0px;
+    text-align: right;
+    font-size: 25px;
+    font-weight: 500;
+    border-radius: 10px;
+    border: none;
+    padding-right: 5px;
+}
+
+input:focus {
+    outline: none;
+}

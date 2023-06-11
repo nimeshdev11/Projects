@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div>
+      <table border="1px">
+        <tr>
+          <td><button class="btn" onclick="clsData()">C</button></td>
+          <td colspan="3"><input type="text" name="" id="txtInput" /></td>
+        </tr>
+        <tr>
+          <td>
+            <button class="btn" id="plus" onclick="storeData('+');sound()">+</button>
+          </td>
+          <td><button class="btn" onclick="storeData('1'); sound()">1</button></td>
+          <td><button class="btn" onclick="storeData('2'); sound()  ">2</button></td>
+          <td><button class="btn" onclick="storeData('3') ; sound()">3</button></td>
+        </tr>
+        <tr>
+          <td>
+            <button class="btn" id="minus" onclick="storeData('-') ; sound()"></button>
+          </td>
+          <td><button class="btn" onclick="storeData('4'); sound()">4</button></td>
+          <td><button class="btn" onclick="storeData('5'); sound()">5</button></td>
+          <td><button class="btn" onclick="storeData('6'); sound()">6</button></td>
+        </tr>
+        <tr>
+          <td>
+            <button class="btn" id="multi" onclick="storeData('*'); sound()">*</button>
+          </td>
+          <td><button class="btn" onclick="storeData('7');sound()">7</button></td>
+          <td><button class="btn" onclick="storeData('8'); sound()">8</button></td>
+          <td><button class="btn" onclick="storeData('9') ; sound()">9</button></td>
+        </tr>
+        <tr>
+          <td>
+            <button class="btn" id="ratio" onclick="storeData('/'); sound()">/</button>
+          </td>
+          <td><button class="btn" onclick="storeData('.');sound()">.</button></td>
+          <td><button class="btn" onclick="storeData('0'); sound()">0</button></td>
+          <td><button class="btn" onclick="calData(); sound()">=</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <script src="/main.js"></script>
+  </body>
+</html>
