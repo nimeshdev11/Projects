@@ -1,0 +1,100 @@
+*{
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+}
+
+body{
+   background-color: aqua;
+   font-family: Georgia, 'Times New Roman', Times, serif; 
+}
+
+.container .form-box{
+display: block;
+width: 100%;
+padding: 20px;
+}
+.form-box{
+background-color: aliceblue;
+max-width: 500px;
+min-height:300px;
+margin: 20px auto;
+border-radius: 5px;
+}
+.form-box .data-field{
+   margin-bottom: 30px;
+   position: relative;
+}
+
+.form-box input{
+   display: block;
+   min-height: 20px;
+   font-size: 18px;
+   padding: 10px;
+   width: 100%;
+   border-radius: 5px;
+   border: 1px solid #ccc;
+}
+.form-box input[type='text'] {
+   padding-right: 25px
+}
+.form-box h3 {
+   display: block;
+   text-align: center;
+   font-size: 28px;
+   margin-bottom: 40px;
+}
+.form-box label {
+   font-size: 20px;
+   color: #000000;
+   margin-bottom: 5px;
+   display: block;
+
+}
+.form-box input[type='submit'] {
+   background: #1a9ae2;
+   cursor: pointer;
+   color: #fff;
+
+}
+
+.form-box .fa {
+   position: absolute;
+   right: 10px;
+   margin-top: -30px;
+}
+
+.form-box .data-field.error input {
+   border-color: #f00;
+   border-width: 2px;
+}
+
+.form-box .data-field.error .fa {
+   color: #f00;
+}
+
+.form-box .data-field.success input {
+   border-color: #0b0;
+   border-width: 2px;
+}
+
+.form-box .data-field.success .fa {
+   color: #0b0;
+}
+
+.data-field span {
+   display: none;
+}
+
+.data-field .error span {
+   color: #f00;
+   display: block
+}
+
+.data-field.success span {
+   color: #0b0;
+}
+
+
+
+
