@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ 
+<style>
+    *{
+     box-sizing: border-box;
+     font-family: 'Roboto', sans-serif;
+}
+ body{
+     margin:0;
+     padding:0 
+}
+ h1{
+     text-align: center;
+     margin: 40px auto;
+     font-size: 50px;
+}
+ h2{
+     text-align:right;
+     font-size:36px;
+}
+ .container-fluid{
+     width: 100%;
+     margin: 0 auto;
+     max-width: 1000px;
+}
+ .container{
+     max-width: 500px;
+     width: 50%;
+     float: left;
+     margin: 0 auto;
+     border: none;
+     padding: 20px;
+}
+ fieldset{
+     padding: 20px;
+     margin: 20px 0;
+     border: 1px solid #cccccc;
+     font-size: 16px;
+}
+ legend{
+     margin-left: 20px;
+     font-size: 20px;
+}
+ input{
+     width: auto;
+     margin: 10px;
+     padding: 5px;
+     font-size: 18px;
+}
+ h3{
+     margin: 5px 0;
+}
+ table{
+     width: 100%;
+     margin-top: 20px;
+     border: none;
+     text-align: center;
+}
+ table td,table th{
+     padding: 5px;
+     margin: 0;
+     border: 1px solid #000000;
+}
+ table tr td:last-child{
+     text-align: right;
+}
+ ul li{
+     padding: 5px;
+     margin: 10px 0;
+}
+</style>
+
+
+
+
+
+
+</head>
+ <body>
+  <h1>Singh Da Daba</h1>
+  <div class="container-fluid">
+   <div class="container">
+    <div class="part1">
+     <fieldset>
+      <legend>Personal Information</legend>
+      Full Name: <input type="text" class="getData" id="name" /> <br />
+
+      Your Email: <input type="text" class="getData" id="email" /><br />
+      Your Mobile: <input type="text" class="getData"  id="mobile" /><br />
+     </fieldset>
+    </div>
+
+    <div class="part2">
+     <fieldset>
+      <legend>Your Orders</legend>
+      Smosa (Rs. 10): <input type="text" id="smosa" /> <br />
+      Kachori (Rs. 12): <input type="text" id="kachori" /><br />
+      Vadapav (Rs. 15): <input type="text" id="vadapav" /><br />
+      Maggi (Rs. 40): <input type="text" id="maggi" /><br />
+     </fieldset>
+    </div>
+   </div>
+
+   <div class="container">
+    <fieldset>
+     <legend>Your Bill</legend>
+     <h3>Your Name:<span id="name2"></span></h3>
+     <h3>Email: <span id="email2"></span></h3>
+     <h3>Mobile: <span id="mobile2"></span></h3>
+     <table border="1">
+      <thead>
+       <tr>
+        <th>Menu</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Amout</th>
+       </tr>
+      </thead>
+      <tbody id="billestimate">
+             </tbody>
+     </table>
+    </fieldset>
+    <h2>Total Amout: Rs. <span id="amount">0</span></h2>
+   </div>
+  </div>
+ </body>
+
+
+ <script src="/main.js"></script>
+</html>
